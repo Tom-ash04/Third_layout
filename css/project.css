@@ -6,10 +6,13 @@
   margin: 0;
   padding: 0; }
 
+button {
+  transition: .5s ease; }
+
 header .jumbotron {
   font-family: 'Dosis', sans-serif;
   min-height: 100vh;
-  background: url("https://static.pexels.com/photos/32237/pexels-photo.jpg") 0/cover;
+  background: url("https://static.pexels.com/photos/497727/pexels-photo-497727.jpeg") 0/cover;
   padding: 0;
   text-align: center;
   margin: 0; }
@@ -23,7 +26,10 @@ header .jumbotron {
       padding: 0 20px; }
     header .jumbotron .navbar a {
       font-size: 20px;
-      color: white; }
+      color: white;
+      transition: .5s ease; }
+      header .jumbotron .navbar a:focus {
+        color: white; }
       header .jumbotron .navbar a:hover {
         color: yellow; }
     header .jumbotron .navbar i {
@@ -54,7 +60,6 @@ header .jumbotron {
     color: white; }
 
 .jumbotron.first {
-  height: 70vh;
   background: url("https://static.pexels.com/photos/200784/pexels-photo-200784.jpeg") 0/cover;
   margin-bottom: 0; }
   .jumbotron.first .row {
@@ -100,6 +105,12 @@ header .jumbotron {
     margin: 0 40px;
     font-size: 60px;
     color: black; }
+    .changer a:hover {
+      text-decoration: none; }
+    .changer a:active {
+      text-decoration: none; }
+    .changer a:focus {
+      text-decoration: none; }
 
 .carousel-indicators {
   display: none; }
@@ -217,8 +228,17 @@ footer .jumbotron:nth-child(2) {
     right: 50px; }
 
 @media (max-width: 767px) {
+  header .jumbotron .navbar {
+    margin: 0; }
+  header .jumbotron .header-content {
+    padding: 0; }
+    header .jumbotron .header-content button {
+      margin-bottom: 50px; }
+    header .jumbotron .header-content .social {
+      padding-bottom: 30px; }
   .jumbotron-content {
-    text-align: center; }
+    text-align: center;
+    margin: 0; }
     .jumbotron-content button {
       margin: 0; }
   .changer {
@@ -236,6 +256,8 @@ footer .jumbotron:nth-child(2) {
   footer .jumbotron:nth-child(2) i {
     display: none; }
   footer .jumbotron:nth-child(2) p {
-    text-align: center; } }
+    text-align: center; }
+  .row {
+    margin: 0; } }
 
 /*# sourceMappingURL=project.css.map */

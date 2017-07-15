@@ -11,12 +11,13 @@
     margin: 0
     padding: 0
     // border: 1px solid black
-
+button
+    transition: .5s ease
 header
     .jumbotron
         font-family: 'Dosis', sans-serif
         min-height: 100vh
-        background: url("https://static.pexels.com/photos/32237/pexels-photo.jpg") 0/cover
+        background: url("https://static.pexels.com/photos/497727/pexels-photo-497727.jpeg") 0/cover
         padding: 0
         text-align: center
         margin: 0
@@ -31,6 +32,9 @@ header
             a
                 font-size: 20px
                 color: white
+                transition: .5s ease
+                &:focus
+                    color: white
                 &:hover
                     color: yellow
             i
@@ -60,7 +64,6 @@ header
         padding: 0 10px
         color: white
 .jumbotron.first
-    height: 70vh
     background: url("https://static.pexels.com/photos/200784/pexels-photo-200784.jpeg") 0/cover
     margin-bottom: 0
     .row
@@ -222,8 +225,19 @@ footer
             right: 50px
 
 @media(max-width:767px)
+    header
+        .jumbotron
+            .navbar
+                margin: 0
+            .header-content
+                padding: 0
+                button
+                    margin-bottom: 50px
+                .social
+                    padding-bottom: 30px
     .jumbotron-content
         text-align: center
+        margin: 0
         button
             margin: 0
     .changer
@@ -248,3 +262,5 @@ footer
                 display: none
             p
                 text-align: center
+    .row
+        margin: 0
